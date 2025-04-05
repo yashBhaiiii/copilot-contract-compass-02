@@ -96,11 +96,26 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "theme-fade": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "rotate-sun": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "rotate-moon": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.3s ease-out",
+        "theme-fade": "theme-fade 0.3s ease-in-out",
+        "rotate-sun": "rotate-sun 0.5s ease-in-out",
+        "rotate-moon": "rotate-moon 0.5s ease-in-out",
       },
     },
   },
