@@ -6,6 +6,11 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import Index from "./pages/Index";
+import Features from "./pages/Features";
+import Builder from "./pages/Builder";
+import GasOptimizer from "./pages/GasOptimizer";
+import CodeLab from "./pages/CodeLab";
+import SecurityAudit from "./pages/SecurityAudit";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,6 +24,11 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/builder" element={<Builder />} />
+            <Route path="/gas-optimizer" element={<GasOptimizer />} />
+            <Route path="/codelab" element={<CodeLab />} />
+            <Route path="/security-audit" element={<SecurityAudit />} />
             <Route path="/projects" element={<Index />} />
             <Route path="/security" element={<Index />} />
             <Route path="/performance" element={<Index />} />
